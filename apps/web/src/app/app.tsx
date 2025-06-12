@@ -26,9 +26,11 @@ export function App() {
           </button>
         </a>
         <button
-        className="border px-2 rounded"
-        onClick={() => handleDownloadWithBlob(512)}
-        >Download using blob</button>
+          className="border px-2 rounded"
+          onClick={() => handleDownloadWithBlob(512)}
+        >
+          Download using blob
+        </button>
       </div>
 
       <div className="grid grid-cols-3 w-[600px] mx-auto bg-neutral-50 py-1">
@@ -38,7 +40,12 @@ export function App() {
             Download using new tab
           </button>
         </a>
-        <button className="border px-2 rounded">Download using blob</button>
+        <button
+          className="border px-2 rounded"
+          onClick={() => handleDownloadWithBlob(1024)}
+        >
+          Download using blob
+        </button>
       </div>
 
       <div className="grid grid-cols-3 w-[600px] mx-auto py-1">
@@ -48,7 +55,12 @@ export function App() {
             Download using new tab
           </button>
         </a>
-        <button className="border px-2 rounded">Download using blob</button>
+        <button
+          className="border px-2 rounded"
+          onClick={() => handleDownloadWithBlob(2048)}
+        >
+          Download using blob
+        </button>
       </div>
 
       <div className="grid grid-cols-3 w-[600px] mx-auto bg-neutral-50 py-1">
@@ -58,7 +70,12 @@ export function App() {
             Download using new tab
           </button>
         </a>
-        <button className="border px-2 rounded">Download using blob</button>
+        <button
+          className="border px-2 rounded"
+          onClick={() => handleDownloadWithBlob(3072)}
+        >
+          Download using blob
+        </button>
       </div>
     </div>
   );
