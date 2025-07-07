@@ -8,3 +8,7 @@
 ## Backend
 
 - `GET http://localhost:3000/generate-file?size=512` to generate a file with size 512 mbs
+
+## TODO
+
+- [x] add progress indicator for "blob" download strategy

@@ -23,6 +23,7 @@ app.get('/generate-file', (req: Request, res: Response): void => {
   const chunk = 'A'.repeat(1024 * 1024); // 1MB chunk
   const totalChunks = Math.floor(sizeInBytes / chunk.length);
 
+  res.setHeader('Content-Length', sizeInBytes);
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader(
     'Content-Disposition',
